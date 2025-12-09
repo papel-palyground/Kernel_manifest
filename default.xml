@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="aosp" fetch="https://android.googlesource.com/"
+    review="https://android-review.googlesource.com/" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="clo-la" fetch="https://git.codelinaro.org/clo/la" review="codelinaro.org" />
+
+  <default remote="github" revision="master" />
+  <project name="papel-palyground/android_Kernel_xiaomi_sm8450" path="xiaomi/sm8450" remote="github"
+    revision="lineage-23" />
+  <project name="papel-palyground/android_kernel_xiaomi_sm8450-devicetrees"
+    path="xiaomi/sm8450-devicetrees" remote="github" revision="lineage-23" />
+  <project name="papel-palyground/android_kernel_xiaomi_sm8450-modules" path="xiaomi/sm8450-modules"
+    remote="github" revision="lineage-23" />
+
+  <project name="kernelplatform/prebuilts-master/clang/host/linux-x86"
+    path="prebuilts-master/clang/host/linux-x86"
+    remote="clo-la"
+    revision="aosp-new/main-kernel-2026/clang-r584948"
+    clone-depth="1" />
+
+  <project remote="clo-la" name="kernel/build" path="build"
+    revision="115ffa9e22935a59871eaa5325a4309be9b2fe8b" upstream="refs/heads/kernel.lnx.5.10.r1-rel" />
+
+  <project remote="clo-la" name="kernel/prebuilts/build-tools" path="prebuilts/kernel-build-tools"
+    revision="1f4f639c8b5e34e005c6cdcec19c05defca59e37"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+  <project remote="clo-la" name="kernel_platform/external/dtc" path="external/dtc"
+    revision="688b3c437753c3486a360955034cd0add45450b4"
+    upstream="refs/heads/kernel.build.lnx.1.0.r1-rel" />
+  <project remote="clo-la" name="kernel_platform/prebuilts/build-tools" path="prebuilts/build-tools"
+    revision="846214bd11004546cd3fc2590c73c628fcd6778c"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+  <project remote="clo-la" name="kernel_platform/system/tools/mkbootimg" path="tools/mkbootimg"
+    revision="08410f46318f3f301b96ed058466ab0dde0b050b"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+  <project remote="clo-la" name="kernel_platform/tools/tradefederation/prebuilts"
+    path="prebuilts/tradefed" revision="f9d01350f3c7d5e407e4d0b23ee765cb771f9109"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+  <project remote="clo-la"
+    name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"
+    path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"
+    revision="c9f87ae369034b4942536a1c5bd62e4cd1d828e3"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+
+  <project remote="clo-la" name="kernel_platform/prebuilts/asuite" path="prebuilts/asuite"
+    revision="ad9c6d3441dd5759f78fdf2e060b897ca7eca174"
+    upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" />
+  <project remote="clo-la" name="kernel_platform/kernel/prebuilts/mainline/arm64"
+    path="kernel/prebuilts/mainline/arm64" revision="de12e10cfe8d67d5c0627069306fda939f52154a"
+    upstream="refs/heads/kernel.lnx.5.10.r1-rel" />
+
+
+</manifest>
