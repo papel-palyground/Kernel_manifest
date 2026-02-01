@@ -6,7 +6,7 @@
   <remote name="pavelc4" fetch="https://github.com/papel-palyground/" />
 
   <default remote="clo" revision="kernel.build.lnx.1.0" sync-j="8" />
-  <project name="android_kernel_build" path="build" remote="pavelc4" revision="uvite" />
+  <project name="android_kernel_build" path="build" remote="pavelc4" revision="main" />
   <project name="android_kernel_prebuilts_build-tools" path="prebuilts/kernel-build-tools" remote="pavelc4"   revision="lineage-23.2" />
 
   
